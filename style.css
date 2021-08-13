@@ -1,0 +1,303 @@
+body,
+h1,
+p {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: #111;
+    color: peru;
+    text-align: center;
+    padding: 2% 0;
+}
+
+#username {
+    position: absolute;
+    right: 1.5em;
+    top: 1.5em;
+    z-index: 100;
+}
+
+#title,
+#note {
+    text-align: center;
+    margin: 0 2%;
+}
+
+#title {
+    font-size: 2em;
+    padding: 2% 0 0 0;
+}
+
+#note {
+    font-size: 1em;
+    padding: 1% 0 0 0;
+}
+
+#container {
+    background-color: antiquewhite;
+    width: 100%;
+    height: 40em;
+    box-sizing: border-box;
+    padding: 0 0 2% 0;
+}
+
+#oval_container {
+    position: absolute;
+    left: 28em;
+    width: 40%;
+    height: 15em;
+    margin: -3em auto 0 auto;
+    contain: content;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+#oval {
+    width: 100%;
+    height: 28em;
+    margin: -16em 0 0 0;
+    background-color: rgba(250, 213, 164, .3);
+    border: 2px solid rgba(250, 213, 164, .3.5);
+    border-radius: 100%;
+    z-index: 2;
+}
+
+#section {
+    width: 96%;
+    display: flex;
+    flex-direction: row;
+    padding: 2%;
+    margin: 3% auto;
+    border: 2px solid peru;
+    background-color: #fff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+.squares {
+    flex: 1;
+    height: 120px;
+    margin-right: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 40px 0 0 0;
+    box-shadow: 2px 2px #aaa;
+    background-color: #ededed;
+    box-sizing: border-box;
+}
+
+.squares:last-child {
+    margin-right: 0;
+}
+
+.squares:hover {
+    cursor: pointer;
+    color: peru;
+}
+
+#displayResult {
+    padding: 0 60px;
+    text-align: center;
+}
+
+.effect {
+    color:peru;
+}
+
+#group {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#sm {
+    margin-right: .35em;
+}
+
+#social_media {
+    margin-right: 2em;
+    width: 6em;
+    display: flex;
+    flex-direction: row;
+}
+
+.fas {
+    width: 1.6em;
+    height: 1.6em;
+    text-align: center;
+    padding-top: .2em;
+    font-weight: bold;
+    background-color: #fff;
+    color: peru;
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+
+#social_media a {
+    margin: 0;
+    flex: 1;
+    padding: .2em;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.fas:hover {
+    background-color: peru;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer span {
+    margin-left: 18em;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #111;
+    color: #eee;
+    text-align: center;
+    font-size: .75em;
+    padding: 2% 0;
+}
+
+
+/**
+    This is for an extremely small device of pixel 600
+**/
+
+@media only screen and (max-width:600px) {
+    #container {
+        height: auto;
+    }
+    #username {
+        right: 1em;
+        top: 1em;
+    }
+    #title {
+        font-size: 1.25em;
+        padding: 2em 1em .7em 1em;
+    }
+    #note {
+        font-size: .75em;
+        padding: .5em;
+    }
+    #section {
+        width: 80%;
+        height: auto;
+        flex-direction: column;
+    }
+    .squares {
+        width: 80px;
+        flex: 1;
+        font-size: 1.5em;
+        padding: 20px 0 20px 0;
+        margin: 0 auto 10px auto;
+    }
+    .squares:last-child {
+        margin-bottom: 0;
+        margin-right: auto;
+    }
+    #oval_container{
+        display: none;
+    }
+    #displayResult {
+        text-align: center;
+        padding: 1em 1em 1.5em 1em;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    footer .insider {
+        flex: 1;
+        margin: .65em auto;
+    }
+    
+    footer span {
+        margin-left: 0;
+    }
+
+    #social_media {
+        margin-right: 0;
+    }
+
+
+    #clear {
+        height: 4em;
+    }
+
+}
+
+
+/**
+    This is for a small device of pixel 600
+**/
+
+@media only screen and (min-width:720px) {}
+
+
+/**
+    This is for tablet of pixel 600
+**/
+
+@media only screen and (min-width:840px) {}
+
+
+/**
+    This is for tablet and laptop of pixel 600
+**/
+
+@media only screen and (min-width:960px) {}
+
+
+/**
+    This is for tablet and laptop of pixel 600
+**/
+
+@media only screen and (min-width:1024px) {}
+
+/**
+    This is for tablet and laptop of pixel 600
+**/
+
+@media only screen and (min-width:1280px){
+
+}
+
+/**
+    This is for tablet and laptop of pixel 600
+**/
+
+@media only screen and (min-width:1440px){
+
+}
+
+/**
+    This is for tablet and laptop of pixel 600
+**/
+
+@media only screen and (min-width:1600px){
+
+}
+
+/**
+    This is for tablet and laptop of pixel 600
+**/
+
+@media only screen and (min-width:1920px){
+
+}

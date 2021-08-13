@@ -1,0 +1,71 @@
+<!--
+    Author: Sunday P. Afolabi
+    Developed on: August 7th, 2021
+    Version: 0.1
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="This website detect user's behavior while clicking on the dynamically generated numbered buttons on this webpage.">
+    <meta name="author" content="Sunday P. Afolabi">
+    <link rel="apple-touch-icon" href="favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Detector</title>
+    <!-- External css rules -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <span id="username"></span>
+            <h1 id="title"></h1>
+        </header>
+        <p id="note"><strong>Note: </strong>Click on any of the following, and I will tell you want you've clicked on.
+        </p>
+        <div id="section">
+            <!-- <div class="squares">0</div>
+            <div class="squares">1</div>
+            <div class="squares">2</div>
+            <div class="squares">3</div>
+            <div class="squares">4</div>
+            <div class="squares">5</div>
+            <div class="squares">6</div>
+            <div class="squares">7</div>
+            <div class="squares">8</div>
+            <div class="squares">9</div> -->
+        </div>
+        <!-- <div id="oval_container">
+            <div id="oval"></div>
+        </div> -->
+        <div id="displayResult"></div>
+    </div>
+    <div id="clear"></div>
+    <footer>
+        <div id="group" class="insider">
+            <label for="social_media" id="sm">Social Media Handler: </label>
+            <div id="social_media">
+                <a href="https://www.facebook.com/spog">
+                    <div class="fas" title="Facebook">F</div>
+                </a>
+                <a href="https://www.linkedin.com/sundaypeterafolabi">
+                    <div class="fas" title="LinkedIn">L</div>
+                </a>
+                <a href="https://www.twitter.com/sundaypeterafolabi">
+                    <div class="fas" title="Twitter">T</div>
+                </a>
+            </div>
+        </div>
+        <div class="insider" id="copyright">
+            <span><strong class="effect">SPL</strong>earning</span><i class="effect">&copy;</i>2021
+        </div>
+    </footer>
+    <!-- Here goes event trigger file -->
+    <script src="event.js"></script>
+</body>
+
+</html>
